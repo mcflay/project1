@@ -1,5 +1,6 @@
 Project1::Application.routes.draw do
-  
+  resources :users
+  match '/signup',  to: 'users#new',            via: 'get'
   match '/posts', to: 'posts#show', via: 'get'
   match '/help', to: 'static_pages#help', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'

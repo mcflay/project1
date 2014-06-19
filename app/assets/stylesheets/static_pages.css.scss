@@ -32,7 +32,7 @@ ul {
     padding: 0;
 }
 
-li {
+header li {
     display: inline;
     padding-left: 20px;
 }
@@ -71,6 +71,9 @@ p {
 	padding-top: 50px;
 	background-color: #fff;
 }
+.main a {
+  color: #000;
+}
 .nav {
 	float: right;
 	padding-top: 15px;
@@ -80,3 +83,4 @@ p {
 	height: 100px;
 	width: 100%;
 }
+

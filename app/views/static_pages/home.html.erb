@@ -1,4 +1,29 @@
 <% provide(:title, 'Home') %>
 
-<h1>Sample App</h1>
+<% if signed_in? %>
+  <div class="">
+    <aside class="">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/post_form' %>
+      </section>
+    </aside>
+    <div class="">
+      <h3>Post feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>Welcome to the Sample App</h1>
+
+
+    <%= link_to "Sign up now!", signup_path,
+                                class: "" %>
+  </div>
+<% end %>
+
+
 
